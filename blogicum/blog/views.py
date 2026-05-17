@@ -5,7 +5,7 @@ from .models import Category, Post
 
 
 def get_published_posts():
-    return Post.objects.select_related(
+    return Post.objects.select_related(  # fkj
         'category',
         'location',
         'author'
